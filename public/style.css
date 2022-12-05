@@ -1,0 +1,118 @@
+:root {
+  --white: #ffffff;
+  --text-color: #262842;
+  --bg-color: #eeeeee;
+  --bg-container: var(--white);
+  --bg-chips: rgba(41, 182, 246, 0.4);
+  --error-color: red;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.grid {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  min-height: 100vh;
+}
+
+.grid__error {
+  width: 100%;
+  margin: 0;
+  margin-top: 10px;
+
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  color: var(--error-color);
+}
+
+.grid__container {
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  min-width: 200px;
+  max-width: 100%;
+  padding: 20px;
+
+  background-color: var(--bg-container);
+  border-radius: 20px;
+  box-shadow: 0px 0px 8px 4px rgba(34, 60, 80, 0.2);
+}
+
+.input {
+  box-sizing: border-box;
+  padding: 10px;
+
+  font-size: 21px;
+  line-height: 100%;
+
+  border: 0;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
+
+  list-style: none;
+}
+
+.chips__element {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+
+  border-radius: 20px;
+  background-color: var(--bg-chips);
+}
+
+.chips span {
+  font-size: 21px;
+  line-height: 100%;
+}
+
+.chips__btn {
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  border: none;
+
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.chips__input {
+  width: 100px;
+
+  font-size: 21px;
+  line-height: 100%;
+
+  border: none;
+  background-color: transparent;
+}
+
+.chips__input:focus {
+  outline: none;
+}
